@@ -8,9 +8,9 @@ import math
 class DenseLayer(nn.Module):
 
     def __init__(self, 
-                 c_in, # dimensionality of input features
-                 c_out, # dimensionality of output features
-                 zero_init=False, # initialize weights as zeros; use Xavier uniform init if zero_init=False
+                 c_in, 
+                 c_out, 
+                 zero_init=False, 
                  ):
 
         super().__init__()
@@ -69,11 +69,11 @@ class SineLayer(nn.Module):
 class DeconvNet(nn.Module):
 
     def __init__(self, 
-                 hidden_dims, # dimensionality of hidden layers
-                 n_celltypes, # number of cell types
-                 n_slices, # number of slices
-                 n_heads, # number of attention heads
-                 slice_emb_dim, # dimensionality of slice id embedding
+                 hidden_dims,
+                 n_celltypes, 
+                 n_slices,
+                 n_heads, 
+                 slice_emb_dim, 
                  adj_dim,
                  coef_fe,
                  ):
